@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Form</title>
+  <link rel="stylesheet" href="formjs.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>New Form</h2>
+  <form id="facebookForm">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"   onchange="onchangeemail()">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"  onchange="onchangepassword()">
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" onchange="onchangecontact()">
+      </div>
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Palestine">Palestine</option>
+        <option value="Qatar">Qatar</option>
+      </select>
+    </div>
+    <button type="submit" onclick="onclicksubmit()" >Submit</button>
+  </form>
+</div>
+
+<script type= "text/javascript" src="formjs.js"></script>
+<!-- 
+<script>
+    function onchangeemail()
+  {
+    alert("hello")
+  }
+</script> -->
+
+</body>
+</html>
